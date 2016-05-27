@@ -30,6 +30,15 @@ body {
   font-size: 30px;
 }
 
+#hamburger{
+
+  display: none;
+}
+.hamburger-nav{
+
+  display: none;
+}
+
 .main-name h1{
 
   font-family: Work Sans;
@@ -67,13 +76,36 @@ body {
 
   .main-name h1{
     font-size: 60px;
+    margin-top:100px;
   }
 
   .main-name h2{
     font-size: 30px;
+    margin-top:40px;
   }
 
-  
+}
 
+@media (max-width: 560px) {
+
+.main-nav{
+
+  display: none;
+}
+
+#hamburger{
+
+  display: block;
+  height: 60px;
+  margin: 30px;
+
+  float: right;
+
+}
+
+.hamburger-nav{
+
+  display: block;
+}
 
 }
