@@ -1,7 +1,7 @@
 <!-- Put your HTML HERE, make sure to connect your style.css sheet -->
 
 <!DOCTYPE html>
-<html lang="eng-us">
+<html lang="eng-us" ng-app = "app">
 
 <head>
     <title>Bob Cook Portfolio</title>
@@ -12,12 +12,16 @@
     <link rel="stylesheet" href="./styles/reset.css">
 
     <!-- STYLES -->
+     <link rel="stylesheet" href="./styles/animate.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://file.myfontastic.com/MEJR3ZHF3vV5pLsiTQzUQJ/icons.css" rel="stylesheet">
 
 
 </head>
 
 <body>
+
+  <main>
 
 
     <header class="main-header">
@@ -36,10 +40,9 @@
             </section>
 
 
-            <div class="hamburger-nav">
-                <img src="./img/hamburgerMenu.png" alt="hamburger menu" id="hamburger" />
+            <div id="hamburger-nav" class = "icon-bars hamburger" ng-click="menuActive = !menuActive">
 
-                <ul class="menu">
+                <ul id="menu" class="touchdropdown animated slideInDown" ng-if="menuActive">
                     <li><a href="#">about</a></li>
                     <li><a href="#">projects</a></li>
                     <li><a href="#">skills</a></li>
@@ -60,7 +63,10 @@
     </section>
 
 
-
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</main>
 </body>
 
 </html>
